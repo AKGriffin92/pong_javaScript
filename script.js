@@ -6,3 +6,5 @@ function drawRect( x , y , w , h , color){
   ctx.fillStyle = color ;
   ctx.fillRect( x , y , w , h )
 } ;
+
+drawRect( 0 , 0 , cvs.width , cvs.height , "BLACK" )
