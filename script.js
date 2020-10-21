@@ -3,8 +3,8 @@ const ctx = cvs.getContext("2d") ;
 
 // create player 1 paddle paddle
 const player1 = {
-  x : cvs.width - 10 ,
-  y : cvs.height / 2 - 100 / 2 ,
+  x : 0 ,
+  y : ( cvs.height - 100 ) / 2 ,
   width : 10 ,
   height : 100 ,
   color : "WHITE" ,
@@ -14,7 +14,7 @@ const player1 = {
 // create player 2 paddle paddle
 const player2 = {
   x : cvs.width - 10 ,
-  y : cvs.height / 2 - 100 / 2 ,
+  y : ( cvs.height - 100 ) / 2 ,
   width : 10 ,
   height : 100 ,
   color : "WHITE" ,
