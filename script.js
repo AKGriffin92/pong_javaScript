@@ -38,13 +38,20 @@ function drawRect( x , y , w , h , color){
   ctx.fillRect( x , y , w , h )
 } ;
 
-// create the draw
+// create the net
 const net = {
   x : cvs.width - 1 ,
   y : 0 ,
   width : 2 ,
   height : 10 ,
   color : "WHITE"
+} ;
+
+// draw the net
+function drawNet() {
+  for( let i = 0 ; i < cvs.height ; i += 15 ) {
+    drawRect( net.x , net.y + i , net.width , net.height , net.color )
+  } ;
 } ;
 
 // draw circle function
