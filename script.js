@@ -91,4 +91,7 @@ drawText( "This is test text." , 300 , 200 ) ;
 function render() {
   // clear the canvas
   drawRect( 0 , 0 , cvs.width , cvs.height , "BLACK" )
+
+  // draw the net
+  drawNet() ;
 } ;
