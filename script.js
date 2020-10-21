@@ -40,7 +40,7 @@ function drawRect( x , y , w , h , color){
 
 // create the net
 const net = {
-  x : cvs.width - 1 ,
+  x : ( cvs.width - 2 ) / 2 ,
   y : 0 ,
   width : 2 ,
   height : 10 ,
