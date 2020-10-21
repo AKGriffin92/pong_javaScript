@@ -38,6 +38,15 @@ function drawRect( x , y , w , h , color){
   ctx.fillRect( x , y , w , h )
 } ;
 
+// create the draw
+const net = {
+  x : cvs.width - 1 ,
+  y : 0 ,
+  width : 2 ,
+  height : 10 ,
+  color : "WHITE"
+} ;
+
 // draw circle function
 function drawCircle( x , y , r , color ){
   ctx.fillStyle = color ;
