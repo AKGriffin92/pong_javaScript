@@ -94,4 +94,8 @@ function render() {
 
   // draw the net
   drawNet() ;
+
+  // drawScore
+  drawText( player1.score , cvs.width / 4 , cvs.height / 5 , "WHITE" )
+  drawText( player2.score , cvs.width / 4 * 3 , cvs.height / 5 , "WHITE" )
 } ;
