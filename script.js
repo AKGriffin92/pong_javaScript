@@ -90,6 +90,21 @@ function render() {
   drawCircle( ball.x , ball.y , ball.radius , ball.color )
 } ;
 
+// collision detection
+function collision( b , p ) {
+  b.top = b.y - b.radius ;
+  b.bottom = b.y + b.radius ;
+  b.left = b.x - b.radius ;
+  b.right = b.x + b.radius ;
+
+  p.top = p.y ;
+  p.bottom = p.y + p.height ;
+  p.left = p.x ;
+  p.right = p.x + p.width ;
+
+  return b.right > p.left && b.bottom > p.top && b.left < p.right && b.top < p.bottom ;
+} ;
+
 // update : pos, mov, score, ...
 function update() {
   ball.x += ball.velocityX ;
@@ -97,6 +112,12 @@ function update() {
 
   if( ball.y + ball.radius > cvs.height || ball.y - ball.radius < 0 ) {
     ball.velocityY *= -1 ;
+  } ;
+
+  let player = ( ball.x < cvs.width / 2) ? player1 : player2 ;
+
+  if ( collision( ball , player ) ) {
+
   } ;
 } ;
 
