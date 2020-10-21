@@ -130,7 +130,7 @@ function update() {
   let player = ( ball.x < cvs.width / 2 ) ? player1 : player2 ;
 
   if ( collision( ball , player ) ) {
-
+    ball.velocityX *= -1 ;
   } ;
 } ;
 
