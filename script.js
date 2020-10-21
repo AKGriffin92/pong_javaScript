@@ -102,4 +102,7 @@ function render() {
   // draw player paddles
   drawRect( player1.x , player1.y , player1.width , player1.height , player1.color )
   drawRect( player2.x , player2.y , player2.width , player2.height , player2.color )
+
+  // draw the ball
+  drawCircle( ball.x , ball.y , ball.radius , ball.color )
 } ;
