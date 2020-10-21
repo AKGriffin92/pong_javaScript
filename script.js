@@ -68,8 +68,6 @@ function drawRect( x , y , w , h , color){
   ctx.fillRect( x , y , w , h )
 } ;
 
-drawRect( 0 , 0 , cvs.width , cvs.height , "BLACK" )
-
 // draw circle function
 function drawCircle( x , y , r , color ){
   ctx.fillStyle = color ;
@@ -89,3 +87,8 @@ function drawText( text , x , y , color){
 } ;
 
 drawText( "This is test text." , 300 , 200 ) ;
+
+function render() {
+  // clear the canvas
+  drawRect( 0 , 0 , cvs.width , cvs.height , "BLACK" )
+} ;
