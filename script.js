@@ -38,7 +38,7 @@ function drawRect( x , y , w , h , color){
   ctx.fillRect( x , y , w , h )
 } ;
 
-// create the draw
+// create the net
 const net = {
   x : cvs.width - 1 ,
   y : 0 ,
