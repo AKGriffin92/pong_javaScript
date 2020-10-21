@@ -94,6 +94,10 @@ function render() {
 function update() {
   ball.x += ball.velocityX ;
   ball.y += ball.velocityY ;
+
+  if( ball.y + ball.radius > cvs.height || ball.y - ball.radius < 0 ) {
+    ball.velocityY *= -1 ;
+  } ;
 } ;
 
 // game init
