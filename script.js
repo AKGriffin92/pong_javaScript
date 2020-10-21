@@ -98,4 +98,8 @@ function render() {
   // drawScore
   drawText( player1.score , cvs.width / 4 , cvs.height / 5 , "WHITE" )
   drawText( player2.score , cvs.width / 4 * 3 , cvs.height / 5 , "WHITE" )
+
+  // draw player paddles
+  drawRect( player1.x , player1.y , player1.width , player1.height , player1.color )
+  drawRect( player2.x , player2.y , player2.width , player2.height , player2.color )
 } ;
