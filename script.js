@@ -3,8 +3,8 @@ const ctx = cvs.getContext("2d") ;
 
 // create player 1 paddle paddle
 const player1 = {
-  x : cvs.width - 10 ,
-  y : cvs.height / 2 - 100 / 2 ,
+  x : 0 ,
+  y : ( cvs.height - 100 ) / 2 ,
   width : 10 ,
   height : 100 ,
   color : "WHITE" ,
@@ -14,7 +14,7 @@ const player1 = {
 // create player 2 paddle paddle
 const player2 = {
   x : cvs.width - 10 ,
-  y : cvs.height / 2 - 100 / 2 ,
+  y : ( cvs.height - 100 ) / 2 ,
   width : 10 ,
   height : 100 ,
   color : "WHITE" ,
@@ -40,7 +40,7 @@ function drawRect( x , y , w , h , color){
 
 // create the net
 const net = {
-  x : cvs.width - 1 ,
+  x : ( cvs.width - 2 ) / 2 ,
   y : 0 ,
   width : 2 ,
   height : 10 ,
@@ -89,3 +89,12 @@ function render() {
   // draw the ball
   drawCircle( ball.x , ball.y , ball.radius , ball.color )
 } ;
+
+// game init
+function game() {
+  render()
+} ;
+
+//loop
+const framePerSecond = 50 ;
+setInterval( game , 1000 / framePerSecond)
