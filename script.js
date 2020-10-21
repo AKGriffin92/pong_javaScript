@@ -38,8 +38,6 @@ function drawRect( x , y , w , h , color){
   ctx.fillRect( x , y , w , h )
 } ;
 
-drawRect( 0 , 0 , cvs.width , cvs.height , "BLACK" )
-
 // draw circle function
 function drawCircle( x , y , r , color ){
   ctx.fillStyle = color ;
@@ -49,8 +47,6 @@ function drawCircle( x , y , r , color ){
   ctx.fill() ;
 } ;
 
-drawCircle( 100 , 100 , 50 , "WHITE")
-
 // draw text
 function drawText( text , x , y , color){
   ctx.fillStyle = color ;
@@ -58,8 +54,7 @@ function drawText( text , x , y , color){
   ctx.fillText( text , x , y) ;
 } ;
 
-drawText( "This is test text." , 300 , 200 ) ;
-
+// render the game
 function render() {
   // clear the canvas
   drawRect( 0 , 0 , cvs.width , cvs.height , "BLACK" )
