@@ -27,4 +27,4 @@ function drawText( text , x , y , color){
   ctx.fillText( text , x , y) ;
 } ;
 
-drawText( "This is test text." , 300 , 200 )
+drawText( "This is test text." , 300 , 200 ) ;
