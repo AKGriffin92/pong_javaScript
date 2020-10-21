@@ -47,6 +47,13 @@ const net = {
   color : "WHITE"
 } ;
 
+// draw the net
+function drawNet() {
+  for( let i = 0 ; i < cvs.height ; i += 15 ) {
+    drawRect( net.x , net.y + i , net.width , net.height , net.color )
+  } ;
+} ;
+
 // draw circle function
 function drawCircle( x , y , r , color ){
   ctx.fillStyle = color ;
