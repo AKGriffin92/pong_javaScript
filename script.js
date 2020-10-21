@@ -119,6 +119,10 @@ function update() {
   ball.x += ball.velocityX ;
   ball.y += ball.velocityY ;
 
+  // simple ai for player 2
+  let computerLevel = 0.1 ;
+  player2.y += ( ball.y - ( player2.y + player2.height / 2 ) ) * computerLevel ;
+
   if( ball.y + ball.radius > cvs.height || ball.y - ball.radius < 0 ) {
     ball.velocityY *= -1 ;
   } ;
