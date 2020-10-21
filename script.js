@@ -9,8 +9,7 @@ const player1 = {
   height : 100 ,
   color : "WHITE" ,
   score : 0
-}const cvs = document.getElementById("pong") ;
-const ctx = cvs.getContext("2d") ;
+} ;
 
 // create player 2 paddle paddle
 const player2 = {
